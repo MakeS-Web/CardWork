@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: #f3eae3;
+      margin: 0px;
+      padding: 0px;
+      box-sizing: 0px;
+      display: grid;
+      place-content: center;
+      min-height: 100vh;
+    }
+    .container{
+      width: 500px;
+      height: 350px;
+      border-radius: 15px;
+      background-color: white;
+      display: grid;
+      grid-template-columns: 250px 250px;
+      grid-template-rows: 50px 20px 200px;
+    }
+    .img1{
+      height: 350px;
+      width: 250px;
+      border-start-start-radius: 15px;
+      border-end-start-radius: 15px;
+    }
+    .image{
+      display: flex;
+      justify-content: left;
+    }
+    .name{
+      color: #c8c9cd;
+      font-family: sans-serif;
+    }
+    .box2{
+      display: grid;
+      grid-column: 2;
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+    .title{
+       margin-top: -10px;
+    }
+    .text2{
+      color: #c8c9cd;
+      font-family: sans-serif;
+      margin-top: -10px;
+    }
+    .price2{
+      color: #c8c9cd;
+      font-family: sans-serif;
+      text-decoration: line-through;
+    }
+    .price1{
+      color: #328465;
+    }
+    .cost{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      margin-top: -30px;
+    }
+    button{
+      background-color: #328465;
+      width: 200px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .icon{
+      width: 10px;
+      height: 10px;
+    }
+    .btn{
+      margin-top: -15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image">
+      <img class="img1" src="C:\Users\S\OneDrive\Desktop\First\cardwork\image-product-desktop.jpg" alt="photo">
+    </div>
+    <div class="box2">
+      <p class="name">PERFUME</p>
+      <h1 class="title">Gabrielle<br> Essence Eau<br> De Parfum</h1>
+      <p class="text2">A floral, solar and voluptuous<br> interpretation composed by<br> Olivier Polge, 
+        Perfumer-Creator<br> for the House of CHANEL.</p>
+        <div class="cost">        
+          <h1 class="price1">$149.99</h1>
+          <p class="price2">$169.99</p>
+        </div>
+        <div class="btn">
+          <button><img class="icon" src="C:\Users\S\OneDrive\Desktop\First\cardwork\icon-cart.svg" alt="photo"> Add to Cart</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+<!-- Perfume
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
